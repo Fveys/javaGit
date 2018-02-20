@@ -11,8 +11,8 @@ public class ConstructeurPoly {
 
     ConstructeurPoly(){
 
-        carres = new ArrayList <Carre>();
-        triangles = new ArrayList <Triangle>();
+        carres = new ArrayList <>();
+        triangles = new ArrayList <>();
 
         constructeurTriangle();
         constructeurCarre();
@@ -20,14 +20,18 @@ public class ConstructeurPoly {
     }
 
 
-   private void constructeurCarre(){
-
-       triangles.add(new Triangle(4));
-   }
-
    private void constructeurTriangle(){
 
+       triangles.add(new Triangle(4));
+       triangles.add(new Triangle(1));
+       triangles.add(new Triangle(9));
+   }
+
+   private void constructeurCarre(){
+
        carres.add(new Carre(3));
+       carres.add(new Carre(10));
+       carres.add(new Carre(1));
 
    }
 }

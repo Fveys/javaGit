@@ -9,7 +9,7 @@ public class Affichage {
 
         System.out.println();
 
-        System.out.println("Voici le tableau de carrés pas marrant :");
+        System.out.println("Voici le tableau de carrés :");
         for (int i = 0; i < poly.carres.size(); i++){
 
             System.out.println("carré " + i + " : " + poly.carres.get(i));
